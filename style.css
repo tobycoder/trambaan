@@ -1,0 +1,300 @@
+@import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic);
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-image: url(imgs/amsterdam.jpg);
+}
+
+body.about {
+    padding-top: 70px;
+}
+
+/*NAVBAR*/
+.nav {
+    background-color: #ffff00;
+    padding: 0;
+    height: 70px;
+    border-bottom: dashed 2px #000000;
+    overflow: auto;
+    font-family: 'Pathway Gothic One', sans-serif;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all 0.5s linear;
+    margin-top: 0;
+}
+
+.nav.active {
+    -webkit-box-shadow: 0px 6px 98px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 6px 98px 2px rgba(0,0,0,0.3);
+    box-shadow: 0px 6px 98px 2px rgba(0,0,0,0.3);
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    width: 120px;
+    height: 70px;
+    text-align: center;
+    line-height: 400% !important;
+    border-left: dashed 2px black;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.nav ul li:hover, .nav ul li:focus, .nav ul li:active {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+}
+.nav ul li a {
+    margin: 0;
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.page-name{
+    line-height: 200%;
+    font-size: 50;
+    display: inline-block;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.page-name:hover, .page-name:focus, .page-name:active {
+    -webkit-transform: skew(-10deg);
+    transform: skew(-10deg);
+}
+
+/*END NAVBAR HEADINGPICTURE*/
+.headingpicture img {
+    opacity:0;
+    -moz-transition: opacity 2s; /* Firefox 4 */
+    -webkit-transition: opacity 2s; /* Safari and Chrome */
+    -o-transition: opacity 2s;
+    transition: opacity 2s;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index:;
+}
+
+/*CONTENT CONTAINERS*/
+.container {
+    height: 100%;
+
+}
+
+.content {
+    background-color: #ffff00;
+    margin: 0;
+    padding: 0;
+}
+
+.content h1 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 45px;
+    margin: auto;
+}
+
+.content p {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    width: 65%;
+    margin: auto;
+}
+
+.in {
+    font-weight: bold;
+}
+
+/* MOVING TRAM */
+.lane {
+    height: 100px;
+    background-color: gold;
+    /*background-image: url(imgs/straat.png);
+    background-size: 210px;
+    background-repeat: no-repeat;*/
+    border-bottom: solid 3px black;
+    
+}
+
+.lane img{
+    height: auto;
+    width: 100px;
+    float: left;
+    margin-top: 0;
+    margin-left: 0;
+    height: 100%;
+    width: auto;
+    position: relative;
+   /*-webkit-animation-name: tram; /* Chrome, Safari, Opera *//*
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera *//*
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-name: tram;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes tram {
+    0%   {left:0; right: 100%;}
+    100% {left:87%; right: 0;}
+}
+
+/* Standard syntax *//*
+@keyframes tram {
+    0%   {left:0; right: 100%;}
+    100% {left:87%; right: 0;}*/
+}
+
+/*ARTICLE SET*/
+.wrap {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    border: solid black 3px;
+}
+.headline {
+    text-align: center;
+}
+
+.picture img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+    border: 2px dashed black;
+}
+
+.only-hover {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+    opacity: 0;
+}
+
+span.only-hover span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.picture img:hover span.only-hover {
+    display: block;
+    opacity: 1;
+}
+.picture img:hover{
+    background: white;
+    font-family: 'Pathway Gothic One', sans-serif;
+    -webkit-filter: brightness(2) invert(0);
+    filter: brightness(2) invert(0);
+    
+}
+.picture-2 img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+    border: 2px dashed black;
+
+}
+.picture-2 img:hover {
+    content: "MEER";
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-align: center;
+    -webkit-filter: brightness(2) invert(0);
+    filter: brightness(2) invert(0);
+}
+.article {
+    margin: auto;
+    padding: 10px;
+    display: inline-block;
+    float: left;
+    font-family: 'Pathway Gothic One', serif !important;
+    font-weight: 400;
+    width: 50%;
+    text-align: center;
+}
+.headline-2 {
+    text-align: center;
+}
+
+.picture-2 img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.article-2 {
+    margin: auto;
+    padding: 10px;
+    display: inline-block;
+    float: left;
+    font-family: 'Pathway Gothic One', serif !important;
+    font-weight: 400;
+    width: 50%;
+    text-align: center;
+}
+
+/*CLEAR*/
+.clear {
+    clear: both;
+}
+
+/*------------------------------------------------------------START ABOUT PAGE----------------------------------------------------------*/
+
+.about{
+}
